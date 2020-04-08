@@ -27,13 +27,15 @@ INSERT INTO INSTRUCTOR
 SELECT * FROM INSTRUCTOR
 ;
 
-SELECT firstname, lastname, country from INSTRUCTOR where city='Toronto'
+SELECT firstname, lastname, country from INSTRUCTOR 
+where city='Toronto'
 ;
 
 UPDATE INSTRUCTOR SET city='Markham' where ins_id=1
 ;
 
-DELETE FROM INSTRUCTOR where ins_id=2
+DELETE FROM INSTRUCTOR 
+where ins_id=2
 ;
 
 SELECT * FROM INSTRUCTOR 
