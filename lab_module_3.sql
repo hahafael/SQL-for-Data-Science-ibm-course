@@ -54,7 +54,7 @@ GROUP BY DEP_ID;
 SELECT COUNT(DEP_ID) AS NUM_EMPLOYEES,AVG(SALARY) AS AVG_SALARY
 FROM EMPLOYEES
 GROUP BY DEP_ID
- ORDER BY AVG_SALARY;
+ORDER BY AVG_SALARY;
  
  --Query 5E: In Query 5D limit the result to departments with fewer than 4
 --employees.
