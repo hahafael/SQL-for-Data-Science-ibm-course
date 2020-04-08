@@ -58,3 +58,23 @@ where ANIMAL = 'Dog';
 -- Get Unique Values from uppercase example
 select DISTINCT(UCASE(ANIMAL)) from PETSALE;
 
+--Get the day portion for each sale date involving cat 
+
+select DAY(SALEDATE) from PETSALE
+where ANIMAL = 'Cat';
+
+-- Get the number of sales during the month of may
+
+select COUNT(*) from PETSALE
+where MONTH(SALEDATE) = 5;
+
+-- Let's say you wanted to know what the date was three days after each sale date because each 
+-- order needs to be processed within three days. 
+
+select DATE(SALEDATE +3 ) as max_date from PETSALE;
+
+-- Get the number of the days that have passed since each sale til now. 
+
+select (CURRENT_DATE - SALEDATE) from PETSALE;
+-- Result 1 - 11010, It means one year, ten mounths and ten days. 
+
